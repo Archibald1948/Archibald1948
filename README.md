@@ -17,3 +17,5 @@
     <img alt="GitHub Pac-Man contribution graph" src="https://raw.githubusercontent.com/kss2002/kss2002/main/.github/images/github-contribution-grid-pacman.svg" />
   </picture>
 </p>
+
+Fork한 모든 레파지토리를 sync 최신화하기: **[sync-forks](https://github.com/kss2002/kss2002/actions)**
