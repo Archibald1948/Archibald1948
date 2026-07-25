@@ -23,7 +23,7 @@
 ## 1. 레포지토리 클론
 
 ```bash
-git clone https://github.com/kss2002/devup-ui.git
+git clone https://github.com/Archibald1948/devup-ui.git
 cd devup-ui
 ```
 
