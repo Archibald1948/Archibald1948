@@ -18,4 +18,4 @@
   </picture>
 </p>
 
-Fork한 모든 레파지토리를 sync 최신화하기: **[sync-forks](https://github.com/kss2002/kss2002/actions)**
+Fork한 모든 레파지토리를 sync 최신화하기: **[sync-forks](https://github.com/Archibald1948/Archibald1948/actions/workflows/sync-forks.yml)**
