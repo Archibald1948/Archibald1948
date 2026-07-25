@@ -3,7 +3,7 @@ description: 버그나 오류를 발견했을 때 제보해주세요.
 title: '[BUG] '
 labels: ['bug']
 assignees:
-  - kss2002
+  - Archibald1948
 
 body:
   - type: markdown
