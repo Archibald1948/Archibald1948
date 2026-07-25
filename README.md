@@ -12,9 +12,9 @@
 <!-- Pac-Man Contribution Graph -->
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/kss2002/kss2002/main/.github/images/github-contribution-grid-pacman-dark.svg" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/kss2002/kss2002/main/.github/images/github-contribution-grid-pacman.svg" />
-    <img alt="GitHub Pac-Man contribution graph" src="https://raw.githubusercontent.com/kss2002/kss2002/main/.github/images/github-contribution-grid-pacman.svg" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Archibald1948/Archibald1948/main/.github/images/github-contribution-grid-pacman-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Archibald1948/Archibald1948/main/.github/images/github-contribution-grid-pacman.svg" />
+    <img alt="GitHub Pac-Man contribution graph" src="https://raw.githubusercontent.com/Archibald1948/Archibald1948/main/.github/images/github-contribution-grid-pacman.svg" />
   </picture>
 </p>
 
