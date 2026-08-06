@@ -1,8 +1,6 @@
 ## Hello. I'm Developer 👋
 
-#### My Portfolio site | My GitHub Dashboard
-
-[Portfolio](https://portfolio-kss.netlify.app) | [Dashboard](https://github-gamma-seven.vercel.app)
+- [My GitHub Dashboard](https://github-gamma-seven.vercel.app)
 
 #### Best Organization being tracked
 
