@@ -2,6 +2,22 @@
 
 - [My GitHub Dashboard](https://github-gamma-seven.vercel.app)
 
+## History
+
+main ai agent | claude
+
+main stack | full stack,react,next.js,typescript,tailwind css,npm/yarn/pnpm ..
+
+sub stack | git,github,figma,notion,vercel ..
+
+### Activity
+
+- Toss Open source contributor
+- GDGoC | mentee (2024.03 ~ 2025.09)
+- kakao Univ | mentee & admin (2024.02 ~ 2025.12)
+- likelion | mentee & admin (2025.03 ~ 2026.12)
+- Multiple hackathons
+
 #### Best Organization being tracked
 
 [Microsoft](https://github.com/microsoft) | [Anthropic](https://github.com/anthropics) | [Toss](https://github.com/toss)
