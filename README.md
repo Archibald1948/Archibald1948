@@ -11,10 +11,8 @@
 ### Activity
 
 - Toss Open source contributor
-- GDGoC | mentee (2024.03 ~ 2025.09)
-- kakao Univ | mentee & admin (2024.02 ~ 2025.12)
-- likelion | mentee & admin (2025.03 ~ 2026.12)
-- Multiple hackathons
+- GDGoC / kakao Univ - likelion : admin
+- Multiple hackathons - Proceed to number 6
 - [Jocoding AX Partners](https://jocodingax.ai)
 
 #### Best Organization being tracked
