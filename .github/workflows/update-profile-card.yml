@@ -1,7 +1,8 @@
 # 매일 프로필 카드의 GitHub 통계(커밋·스타·팔로워·LOC)를 갱신하고 SVG를 다시 만든다.
 #
 # 기본 GITHUB_TOKEN은 공개 저장소 통계만 볼 수 있다.
-# 비공개 저장소까지 포함하려면 repo 스코프 PAT를 ACCESS_TOKEN 시크릿으로 등록한다.
+# 비공개 저장소까지 포함하려고 ACCESS_TOKEN 시크릿을 먼저 쓰고, 없으면 sync-forks용
+# SYNC_TOKEN(PAT)을 함께 쓴다.
 name: Update Profile Card
 
 on:
@@ -35,7 +36,7 @@ jobs:
 
       - name: Update stats
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN || secrets.SYNC_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python .github/profile-card/update_stats.py
 
