@@ -23,7 +23,6 @@
   <a href="https://github.com/Archibald1948/TIL"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-til-dark.svg" /><img alt="TIL" src=".github/images/link-til-light.svg" /></picture></a>
   <a href="https://github.com/Archibald1948/agent-kit"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-agent-kit-dark.svg" /><img alt="agent-kit" src=".github/images/link-agent-kit-light.svg" /></picture></a>
   <a href="https://github.com/Archibald1948/Archibald1948/actions/workflows/sync-forks.yml"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-sync-forks-dark.svg" /><img alt="sync-forks workflow" src=".github/images/link-sync-forks-light.svg" /></picture></a>
-  <br />
   <a href="https://jocodingax.ai"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-jocodingax-dark.svg" /><img alt="Jocoding AX Partners" src=".github/images/link-jocodingax-light.svg" /></picture></a>
   <a href="https://github.com/microsoft"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-microsoft-dark.svg" /><img alt="Microsoft on GitHub" src=".github/images/link-microsoft-light.svg" /></picture></a>
   <a href="https://github.com/anthropics"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-anthropic-dark.svg" /><img alt="Anthropic on GitHub" src=".github/images/link-anthropic-light.svg" /></picture></a>
