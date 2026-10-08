@@ -1,0 +1,56 @@
+# 매일 프로필 카드의 GitHub 통계(커밋·스타·팔로워·LOC)를 갱신하고 SVG를 다시 만든다.
+#
+# 기본 GITHUB_TOKEN은 공개 저장소 통계만 볼 수 있다.
+# 비공개 저장소까지 포함하려면 repo 스코프 PAT를 ACCESS_TOKEN 시크릿으로 등록한다.
+name: Update Profile Card
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 00:00 UTC = 09:00 KST
+  workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/profile-card/generate_svg.py'
+      - '.github/profile-card/update_stats.py'
+      - '.github/profile-card/ascii_art.json'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Update stats
+        env:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python .github/profile-card/update_stats.py
+
+      - name: Generate SVG
+        run: python .github/profile-card/generate_svg.py
+
+      - name: Commit & Push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add .github/profile-card/stats.json .github/profile-card/loc_cache.json .github/images/profile-card-*.svg
+          if git diff --cached --quiet; then
+            echo "No changes."
+            exit 0
+          fi
+          git commit -m "chore(profile-card): update stats [skip ci]"
+          git pull --rebase origin ${{ github.ref_name }}
+          git push origin HEAD:${{ github.ref_name }}
