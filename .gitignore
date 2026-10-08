@@ -1,2 +1,41 @@
 # macOS
 .DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+
+# 에디터 / IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.sublime-workspace
+
+# 로컬 환경 변수 / 비밀값
+.env
+.env.*
+!.env.example
+
+# 로그 / 임시 파일
+*.log
+*.tmp
+*.bak
+
+# Node (워크플로·스크립트 로컬 실행 시)
+node_modules/
+
+# AI 도구 로컬 산출물
+.playwright-mcp/
+.claude/settings.local.json
