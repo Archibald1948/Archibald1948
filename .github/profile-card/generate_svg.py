@@ -51,6 +51,8 @@ CW, LH, FS = 8.4, 19.6, 14
 PANEL_COLS = 60
 STAT_SPLIT = 33  # 통계 줄에서 왼쪽 항목이 차지하는 글자 수
 GAP = 40
+# 링크 버튼
+LINK_CW, LINK_FS, LINK_PAD, LINK_H = 7.2, 12, 10, 26
 
 THEMES = {
     "dark": {
@@ -194,22 +196,22 @@ def render(theme: str, art: dict, stats: dict) -> str:
 
 
 def render_link(theme: str, prefix: str, name: str) -> str:
+    """README 한 줄(약 830px)에 8개가 다 들어가도록 작게 만든 링크 버튼."""
     colors = THEMES[theme]
-    pad, height = 14, 34
-    chars = len(prefix) + len(name) + 2  # 이름 뒤 ' ↗'
-    width = pad * 2 + chars * CW
+    pad, height = LINK_PAD, LINK_H
+    width = pad * 2 + (len(prefix) + len(name)) * LINK_CW
     x = pad
     spans = []
-    for text, color in [(prefix, "muted"), (name, "key"), (" ↗", "muted")]:
+    for text, color in [(prefix, "muted"), (name, "key")]:
         if text:
-            spans.append(tspan(x, text, colors[color], CW))
-            x += len(text) * CW
+            spans.append(tspan(x, text, colors[color], LINK_CW))
+            x += len(text) * LINK_CW
     return "\n".join([
         f'<svg xmlns="http://www.w3.org/2000/svg" width="{width:.0f}" height="{height}" '
         f'viewBox="0 0 {width:.0f} {height}" role="img" aria-label="{escape(prefix + name)}">',
         f'<rect x="0.5" y="0.5" width="{width - 1:.0f}" height="{height - 1}" rx="6" '
         f'fill="{colors["bg"]}" stroke="{colors["border"]}"/>',
-        f'<text y="{height / 2 + FS * 0.35:.1f}" font-family="{FONT}" font-size="{FS}" '
+        f'<text y="{height / 2 + LINK_FS * 0.35:.1f}" font-family="{FONT}" font-size="{LINK_FS}" '
         f'xml:space="preserve">{"".join(spans)}</text>',
         "</svg>",
     ]) + "\n"
