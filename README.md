@@ -27,4 +27,5 @@
   <a href="https://github.com/microsoft"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-microsoft-dark.svg" /><img alt="Microsoft on GitHub" src=".github/images/link-microsoft-light.svg" /></picture></a>
   <a href="https://github.com/anthropics"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-anthropic-dark.svg" /><img alt="Anthropic on GitHub" src=".github/images/link-anthropic-light.svg" /></picture></a>
   <a href="https://github.com/toss"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-toss-dark.svg" /><img alt="Toss on GitHub" src=".github/images/link-toss-light.svg" /></picture></a>
+  <a href="https://github.com/openai"><picture><source media="(prefers-color-scheme: dark)" srcset=".github/images/link-openai-dark.svg" /><img alt="OpenAI on GitHub" src=".github/images/link-openai-light.svg" /></picture></a>
 </p>
